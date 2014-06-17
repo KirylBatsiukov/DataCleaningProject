@@ -54,4 +54,4 @@ newColNames <- sapply(names(tidyDataTable)[-(1:2)], function(name) paste("mean("
 setnames(tidyDataTable, names(tidyDataTable), c("Activity", "Subject", newColNames))
 
 #write the dataset to the hard drive
-write.csv(tidyDataTable, file="MeasureAvgTidySet.csv")
+write.csv(tidyDataTable, file="tidy.csv")
